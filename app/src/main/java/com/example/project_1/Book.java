@@ -27,13 +27,11 @@ public class Book {
     private final int author;
     private final int imageResource;
     private boolean isFavorite = false;
-    private final String imageUrl;
 
-    public Book(int name, int author, int imageResource, String imageUrl) {
+    public Book(int name, int author, int imageResource) {
         this.name = name;
         this.author = author;
         this.imageResource = imageResource;
-        this.imageUrl = imageUrl;
     }
 
     public int getName() {
@@ -57,9 +55,5 @@ public class Book {
 
     public void toggleFavorite() {
         isFavorite = !isFavorite;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
     }
 }
